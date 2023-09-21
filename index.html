@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/af60dd6589.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Collection View</title>
+  </head>
+  <body>
+    <div class="min-h-full md:min-h-screen my-8 w-full flex items-center justify-center">
+      <div class="container-content px-5 lg:px-10 w-full">
+        <div class="lg:flex lg:justify-between lg:items-center">
+          <h1 class="text-3xl text-center lg:text-left lg:text-[3rem] font-playfair font-bold">Best Sellers</h1>
+          <h3 class="text-sm hidden lg:text-[14px] font-semibold font-roboto lg:flex items-center">
+            Shop all best sellers
+            <span class="text-xl ml-4"
+              ><i class="fa-solid fa-arrow-right" style="color: #400040"></i
+            ></span>
+          </h3>
+        </div>
+
+        <div class="outer-wrapper overflow-x-auto">
+            <div
+            class="lg:flex pb-10  box-container mb-10 lg:gap-x-4 gap-y-20 lg:gap-y-0 lg:items-center mt-20 grid grid-cols-2 gap-4"
+          >
+            <!-- Card 1-->
+            <article id='box' class="lg:min-w-[400px] box  relative duration-700">
+              <div class="img img-container w-full h-[150px] lg:h-[280px]  relative">
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="image-1"
+                  class="w-full headphones object-cover h-full rounded-xl"
+                />
+                <span
+                  class="absolute left-2 top-2 text-black bg-white px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Best Sellers</span
+                >
+              </div>
+              <div class="content-container mt-5 pl-4">
+                <h1 class="text-xl lg:text-2xl font-semibold font-roboto uppercase">
+                  outside vibes t-shirt sunshine
+                </h1>
+                <div class="reviews flex my-4 items-center">
+                  <span class="text-sm lg:text-lg"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><span
+                      class="capitalize text-gray-700 text-sm lg:text-lg ml-6 font-semibold"
+                      >1,234 Reviews</span
+                    ></span
+                  >
+                </div>
+                <p class="font-semibold font-roboto text-xl">$104.95</p>
+              </div>
+            </article>
+            <!-- Card end -->
+            <!-- Card 2 -->
+            <article id='box' class="lg:min-w-[400px] box  relative duration-700">
+              <div class="img img-container w-full h-[150px] lg:h-[280px]  relative">
+                <img
+                  src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
+                  alt="image-1"
+                  class="w-full glasses object-cover h-full rounded-xl"
+                />
+                <span
+                  class="absolute left-2 top-2 text-black bg-white px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Best Sellers</span
+                >
+                <span
+                  class="absolute right-2 top-2 text-white bg-green-400 px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Save 15</span
+                >
+              </div>
+              <div class="content-container mt-5 pl-4">
+                <h1 class="text-xl lg:text-2xl font-semibold font-roboto uppercase">
+                  hike bottle outside vibes forest green
+                </h1>
+                <div class="reviews flex my-4 items-center">
+                  <span class="text-lg"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><span
+                      class="capitalize text-gray-700 text-lg ml-6 font-semibold"
+                      >1,234 Reviews</span
+                    ></span
+                  >
+                </div>
+                <p class="font-semibold font-roboto text-xl">$104.95</p>
+              </div>
+            </article>
+            <!-- card 2 end -->
+            <!-- Card 3 -->
+            <article id='box' class="lg:min-w-[400px] box  relative duration-700">
+              <div class="img img-container w-full h-[150px] lg:h-[280px]  relative">
+                <img
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="image-1"
+                  class="w-full sneaker object-cover h-full rounded-xl"
+                />
+                <span
+                  class="absolute left-2 top-2 text-black bg-white px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Best Sellers</span
+                >
+              </div>
+              <div class="content-container mt-5 pl-4">
+                <h1 class="text-xl lg:text-2xl font-semibold font-roboto uppercase">
+                  rest in nature t-shirt charcoal
+                </h1>
+                <div class="reviews flex my-4 items-center">
+                  <span class="text-lg"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><span
+                      class="capitalize text-gray-700 text-lg ml-6 font-semibold"
+                      >1,234 Reviews</span
+                    ></span
+                  >
+                </div>
+                <p class="font-semibold font-roboto text-xl">$104.95</p>
+              </div>
+            </article>
+            <!-- Card 3 end -->
+            <!-- Card 4 -->
+            <article id='box' class="lg:min-w-[400px] box  relative duration-700">
+              <div class="img img-container w-full h-[150px] lg:h-[280px]  relative">
+                <img
+                  src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1539&q=80"
+                  alt="image-1"
+                  class="w-full banana object-cover h-full rounded-xl"
+                />
+                <span
+                  class="absolute left-2 top-2 text-black bg-white px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Best Sellers</span
+                >
+                <span
+                  class="absolute right-2 top-2 text-white bg-green-400 px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Save 15</span
+                >
+              </div>
+              <div class="content-container mt-5 pl-4">
+                <h1 class="text-xl lg:text-2xl font-semibold font-roboto uppercase">
+                  outside vibes t-shirt sunshine
+                </h1>
+                <div class="reviews flex my-4 items-center">
+                  <span class="text-lg"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><span
+                      class="capitalize text-gray-700 text-lg ml-6 font-semibold"
+                      >1,234 Reviews</span
+                    ></span
+                  >
+                </div>
+                <p class="font-semibold font-roboto text-xl">$104.95</p>
+              </div>
+            </article>
+            <!-- Card 4 end -->
+            <!-- Card  5-->
+            <article id='box' class="lg:min-w-[400px] box  relative duration-700">
+              <div class="img img-container w-full h-[150px] lg:h-[280px]  relative">
+                <img
+                  src="https://images.unsplash.com/photo-1572635196184-84e35138cf62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
+                  alt="image-1"
+                  class="w-full object-cover h-full rounded-xl"
+                />
+                <span
+                  class="absolute left-2 top-2 text-black bg-white px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Best Sellers</span
+                >
+              </div>
+              <div class="content-container mt-5 pl-4">
+                <h1 class="text-xl lg:text-2xl font-semibold font-roboto uppercase">
+                  outside vibes t-shirt sunshine
+                </h1>
+                <div class="reviews flex my-4 items-center">
+                  <span class="text-lg"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><span
+                      class="capitalize text-gray-700 text-lg ml-6 font-semibold"
+                      >1,234 Reviews</span
+                    ></span
+                  >
+                </div>
+                <p class="font-semibold font-roboto text-xl">$104.95</p>
+              </div>
+            </article>
+            <!-- Card 5 end -->
+            <!-- Card  6-->
+            <article id='box' class="lg:min-w-[400px] box  relative duration-700">
+              <div class="img img-container w-full h-[150px] lg:h-[280px]  relative">
+                <img
+                  src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1325&q=80"
+                  alt="image-1"
+                  class="w-full object-cover h-full rounded-xl"
+                />
+                <span
+                  class="absolute left-2 top-2 text-black bg-white px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Best Sellers</span
+                >
+                <span
+                  class="absolute right-2 top-2 text-white bg-green-400 px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Save 15</span
+                >
+              </div>
+              <div class="content-container mt-5 pl-4">
+                <h1 class="text-xl lg:text-2xl font-semibold font-roboto uppercase">
+                  Nike Sneaker
+                </h1>
+                <div class="reviews flex my-4 items-center">
+                  <span class="text-lg"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><span
+                      class="capitalize text-gray-700 text-lg ml-6 font-semibold"
+                      >1,234 Reviews</span
+                    ></span
+                  >
+                </div>
+                <p class="font-semibold font-roboto text-xl">$104.95</p>
+              </div>
+            </article>
+            <!-- Card 6 end -->
+            <!-- Card  7-->
+            <article id='box' class="lg:min-w-[400px] box  relative duration-700">
+              <div class="img img-container w-full h-[150px] lg:h-[280px]  relative">
+                <img
+                  src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1420&q=80"
+                  alt="image-1"
+                  class="w-full object-cover h-full rounded-xl"
+                />
+                <span
+                  class="absolute left-2 top-2 text-black bg-white px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Best Sellers</span
+                >
+              </div>
+              <div class="content-container mt-5 pl-4">
+                <h1 class="text-xl lg:text-2xl font-semibold font-roboto uppercase">
+                  Laptop
+                </h1>
+                <div class="reviews flex my-4 items-center">
+                  <span class="text-lg"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><span
+                      class="capitalize text-gray-700 text-lg ml-6 font-semibold"
+                      >1,234 Reviews</span
+                    ></span
+                  >
+                </div>
+                <p class="font-semibold font-roboto text-xl">$104.95</p>
+              </div>
+            </article>
+            <!-- Card 7 end -->
+            <!-- Card  8-->
+            <article id='box' class="lg:min-w-[400px] box  relative duration-700">
+              <div class="img img-container w-full h-[150px] lg:h-[280px]  relative">
+                <img
+                  src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
+                  alt="image-1"
+                  class="w-full phone object-cover h-full rounded-xl"
+                />
+                <span
+                  class="absolute left-2 top-2 text-black bg-white px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Best Sellers</span
+                >
+                <span
+                  class="absolute right-2 top-2 text-white bg-green-400 px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Save 15</span
+                >
+              </div>
+              <div class="content-container mt-5 pl-4">
+                <h1 class="text-xl lg:text-2xl font-semibold font-roboto uppercase">
+                  iPhone 5s Pro
+                </h1>
+                <div class="reviews flex my-4 items-center">
+                  <span class="text-lg"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><span
+                      class="capitalize text-gray-700 text-lg ml-6 font-semibold"
+                      >1,234 Reviews</span
+                    ></span
+                  >
+                </div>
+                <p class="font-semibold font-roboto text-xl">$104.95</p>
+              </div>
+            </article>
+            <!-- Card 8 end -->
+            <article id='box' class="lg:min-w-[400px] box  relative duration-700">
+              <div class="img img-container w-full h-[150px] lg:h-[280px]  relative">
+                <img
+                  src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1420&q=80"
+                  alt="image-1"
+                  class="w-full object-cover h-full rounded-xl"
+                />
+                <span
+                  class="absolute left-2 top-2 text-black bg-white px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Best Sellers</span
+                >
+                
+              </div>
+              <div class="content-container mt-5 pl-4">
+                <h1 class="text-xl lg:text-2xl font-semibold font-roboto uppercase">
+                  Laptop
+                </h1>
+                <div class="reviews flex my-4 items-center">
+                  <span class="text-lg"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><span
+                      class="capitalize text-gray-700 text-lg ml-6 font-semibold"
+                      >1,234 Reviews</span
+                    ></span
+                  >
+                </div>
+                <p class="font-semibold font-roboto text-xl">$104.95</p>
+              </div>
+            </article>
+            <!-- Card 8 end -->
+            <!-- Card  9-->
+            <article id='box' class="lg:min-w-[400px] box  relative duration-700">
+              <div class="img img-container w-full h-[150px] lg:h-[280px]  relative">
+                <img
+                  src="https://images.unsplash.com/photo-1536846511313-4b07b637bff9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="image-1"
+                  class="w-full object-cover h-full rounded-xl"
+                />
+                <span
+                  class="absolute left-2 top-2 text-black bg-white px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Best Sellers</span
+                >
+              </div>
+              <div class="content-container mt-5 pl-4">
+                <h1 class="text-xl lg:text-2xl font-semibold font-roboto uppercase">
+                  Toy car taxi
+                </h1>
+                <div class="reviews flex my-4 items-center">
+                  <span class="text-lg"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><span
+                      class="capitalize text-gray-700 text-lg ml-6 font-semibold"
+                      >1,234 Reviews</span
+                    ></span
+                  >
+                  <span
+                  class="absolute right-2 top-2 text-white bg-green-400 px-4 py-2 border border-black text-sm font-semibold rounded-full"
+                  >Save 15</span
+                >
+                </div>
+                <p class="font-semibold font-roboto text-xl">$104.95</p>
+              </div>
+            </article>
+            <!-- Card 9 end -->
+            
+  
+          </div>
+        </div>
+        
+
+        
+        <button id="btn" class="px-10 hover:bg-black/70 duration-700 text-2xl font-bold hover:translate-y-2 lg:hidden my-10 w-full rounded-full capitalize bg-black text-white tracking-[2px]  py-5">Show more</button>
+
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

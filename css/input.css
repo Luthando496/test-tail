@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+@media screen and (max-width:1000px) {
+    .container-content .box-container .box{
+        display: none;
+    }
+}
+@media screen and (min-width:1560px) {
+    .container-content .box-container{
+        display: grid;
+        grid-auto-columns: 500px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .outer-wrapper {
+        max-width: 100%;
+        overflow-x: scroll;
+        position: relative;
+        scrollbar-color: #000000 #d5ac68;
+        scrollbar-width: thin;
+        -ms-overflow-style: none;
+    }
+    
+    .outer-wrapper::-webkit-scrollbar {
+        height: 2px;
+    }
+    
+    .outer-wrapper::-webkit-scrollbar-thumb {
+          height: 2px;
+          background-color: #d5ac68;
+      }
+      
+      .outer-wrapper::-webkit-scrollbar-thumb:hover {
+          height: 6px;
+        background-color: #ffff;
+      }
+      
+      .outer-wrapper::-webkit-scrollbar:vertical {
+        display: none;
+      }
+}
+  
+
+.container-content .box-container .box:nth-child(1){
+    display: block;
+}
+.container-content .box-container .box:nth-child(2){
+    display: block;
+}
+.even-show:nth-child(even){
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    color:white;
+    background-color: green;
+    border: 1px solid black;
+    padding: 4px 6px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.img img{
+    transition: all 700ms ease-in;
+}
+
+.phone:hover{
+    content: url("https://images.unsplash.com/photo-1505156868547-9b49f4df4e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1432&q=80");
+}
+
+.headphones:hover{
+    content: url("https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1465&q=80");
+}
+.glasses:hover{
+    content: url("https://images.unsplash.com/photo-1618677366787-9727aacca7ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1372&q=80");
+}
+.sneaker:hover{
+    content: url("https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+}
+.banana:hover{
+    content: url("https://images.unsplash.com/photo-1528825871115-3581a5387919?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1430&q=80");
+}
